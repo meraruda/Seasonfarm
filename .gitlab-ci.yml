@@ -7,7 +7,7 @@ stages:
 frontend-build-test:
   stage: frontend-build-test
   script:
-    - cd seasonfarm/clientapp/
+    - cd builds/Seasonfarm/ClientApp/
     - npm install
     - npm run test
     - npm run build
