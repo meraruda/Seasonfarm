@@ -1,0 +1,20 @@
+{
+  "name": "seasonfarm",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/jincod/dotnetcore.tgz"
+    }
+  ]
+}
