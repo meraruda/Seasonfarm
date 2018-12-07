@@ -1,0 +1,6 @@
+{
+    "main": "Home.js",
+    "devDependencies": {
+        "@types/enzyme": "^3.1.15"
+    }
+}

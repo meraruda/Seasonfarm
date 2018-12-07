@@ -1,0 +1,193 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true
+    },
+    "globals": {
+      "FRONTEND": true,
+      "NODE_ENV": true,
+      "VERSION": true,
+      "COMMITHASH": true,
+      "BRANCH": true
+    },
+    "rules": {
+      "arrow-body-style": [
+        0
+      ],
+      "arrow-parens": [
+        0
+      ],
+      "class-methods-use-this": [
+        0
+      ],
+      "consistent-return": [
+        0
+      ],
+      "camelcase": 0,
+      "eol-last": [
+        2
+      ],
+      "global-require": 0,
+      "no-unused-vars": 1,
+      "import/prefer-default-export": [
+        0
+      ],
+      "import/no-extraneous-dependencies": [
+        0
+      ],
+      "import/no-unresolved": [
+        0
+      ],
+      "import/extensions": [
+        0
+      ],
+      "import/no-webpack-loader-syntax": [
+        0
+      ],
+      "jsx-a11y/no-static-element-interactions": [
+        0
+      ],
+      "jsx-a11y/label-has-for": 0,
+      "linebreak-style": 0,
+      "no-alert": [
+        0
+      ],
+      "no-array-index-key": [
+        0
+      ],
+      "no-trailing-spaces": [
+        2
+      ],
+      "no-console": [
+        0
+      ],
+      "no-debugger": [
+        0
+      ],
+      "no-await-in-loop": [
+        0
+      ],
+      "no-useless-escape": [
+        0
+      ],
+      "object-curly-newline": 0,
+      "prefer-template": [
+        0
+      ],
+      "no-underscore-dangle": [
+        0
+      ],
+      "no-use-before-define": [
+        0
+      ],
+      "no-param-reassign": [
+        "warn",
+        {
+          "props": false
+        }
+      ],
+      "no-restricted-syntax": [
+        "error",
+        "BinaryExpression[operator='in']"
+      ],
+      "max-len": [
+        2,
+        150,
+        {
+          "ignoreComments": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+      ],
+      "react/destructuring-assignment": 0,
+      "react/sort-comp": 0,
+      "react/jsx-filename-extension": [
+        0
+      ],
+      "react/no-unused-prop-types": [
+        0
+      ],
+      "react/prefer-stateless-function": [
+        0
+      ],
+      "react/jsx-one-expression-per-line": [
+        0
+      ],
+      "react/prop-types": [
+        1,
+        {
+          "ignore": [
+            "location",
+            "history",
+            "actions",
+            "handleSubmit",
+            "common",
+            "commonAction",
+            "connectDragSource",
+            "connectDropTarget",
+            "match",
+            "loader",
+            "setErrorInfo",
+            "clearErrorInfo",
+            "errorKey",
+            "errorData",
+            "getErrorInfo",
+            "currentLang",
+            "children",
+            "t",
+            "i18n"
+          ]
+        }
+      ],
+      "semi": [
+        "warn"
+      ],
+      "jsx-a11y/anchor-is-valid": [
+        0
+      ],
+      "react/no-access-state-in-setstate": [
+        0
+      ],
+      "lines-between-class-members": [
+        0
+      ],
+      "import/no-named-as-default": [
+        0
+      ],
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ],
+      "no-else-return": [
+        0
+      ],
+      "react/jsx-boolean-value": [
+        0
+      ],
+      "no-unneeded-ternary": [
+        0
+      ],
+      "object-shorthand": [
+        0
+      ],
+      "no-nested-ternary": [
+        0
+      ],
+      "react/jsx-wrap-multilines": [
+        0
+      ],
+      "react/no-multi-comp": [
+        0
+      ]
+    }
+  }
+  

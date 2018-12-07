@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Seasonfarm
 {
@@ -25,7 +26,11 @@ namespace Seasonfarm
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/build";
+                configuration.RootPath = "ClientApp/dist";
+            });
+
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new Info { Title = "WiFR4Factory", Version = "1.0.0" });
             });
         }
 
@@ -45,6 +50,13 @@ namespace Seasonfarm
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.DocumentTitle = "Swagger UI - Application";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Reference");
+            });
 
             app.UseMvc(routes =>
             {

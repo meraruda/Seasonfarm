@@ -1,31 +1,24 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
-import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
-import { createBrowserHistory } from 'history';
-import configureStore from './store/configureStore';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { hot } from 'react-hot-loader';
+import { Provider } from 'mobx-react';
+import {
+  Route, Switch, HashRouter,
+} from 'react-router-dom';
+import { Home } from './containers/Home';
 
-// Create browser history to use in the Redux store
-const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
-const history = createBrowserHistory({ basename: baseUrl });
-
-// Get the application-wide store instance, prepopulating with state from the server where available.
-const initialState = window.initialReduxState;
-const store = configureStore(history, initialState);
-
-const rootElement = document.getElementById('root');
-
-ReactDOM.render(
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <App />
-    </ConnectedRouter>
-  </Provider>,
-  rootElement);
-
-registerServiceWorker();
+const Main = () => (
+    <Provider
+    >
+      <HashRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/home" component={Home} />
+        </Switch>
+      </HashRouter>
+    </Provider>
+  );
+  
+  ReactDOM.render(<Main />, document.getElementById('app'));
+  
+  hot(module)(Main);

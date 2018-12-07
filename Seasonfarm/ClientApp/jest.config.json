@@ -1,0 +1,46 @@
+{
+    "verbose": false,
+    "testURL": "http://localhost/",
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}",
+      "src/containers/**/*.{js,jsx}",
+      "!src/containers/**/style.js",
+      "!src/components/**/style.js",
+      "!src/**/index.js",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "<rootDir>/testReport",
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform",
+      "\\.(jpg|jpeg|png|gif|webp|svg)$": "jest-transform-file"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleNameMapper": {
+      
+    },
+    "setupFiles": ["<rootDir>/jest/setupFiles.js"],
+    "globals": {
+      
+    }
+  }
+  
