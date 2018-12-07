@@ -22,7 +22,7 @@ backend-build-test:
 
 deploy:
   image: docker:latest
-  service:
+  services:
     - docker:dind
   variables:
     DOCKER_DRIVER: overlay
