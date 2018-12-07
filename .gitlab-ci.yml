@@ -22,11 +22,15 @@ backend-build-test:
 
 deploy:
   image: docker:latest
+  service:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay
   stage: deploy
   script:
   - cd Seasonfarm
-  - docker login -u _ -p $HEROKU_TOKEN registry.heroku.com
   - docker build -f Dockerfile --iidfile imageid.txt -t registry.heroku.com/seasonfarm/web .
+  - docker login -u _ -p $HEROKU_TOKEN registry.heroku.com
   - docker push registry.heroku.com/seasonfarm/web
   - apk add --no-cache curl
   - echo "Docker Image ID is $(cat imageid.txt)"
