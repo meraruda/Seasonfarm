@@ -1,0 +1,10 @@
+stages:
+  - frontend-build-test
+  # - frontend-unit-test
+  # - backend-build-test
+  # - backend-unit-test
+
+frontend-build-test:
+  stage: frontend-build-test
+  script:
+    - ./seasonfarm/clientapp/ npm run build
