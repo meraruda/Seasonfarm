@@ -1,7 +1,7 @@
 stages:
   - frontend-build-test
   # - frontend-unit-test
-  # - backend-build-test
+  - backend-build-test
   # - backend-unit-test
 
 frontend-build-test:
@@ -12,3 +12,11 @@ frontend-build-test:
     - npm install
     - npm run test
     - npm run build
+
+backend-build-test:
+  image: microsoft/dotnet:2.2-sdk
+  stage: backend-build-test
+  script:
+  - cd Seasonfarm
+  - dotnet restore Seasonfarm.csproj
+  - dotnet build Seasonfarm.csproj -c Release -o /app
