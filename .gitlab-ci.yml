@@ -5,9 +5,10 @@ stages:
   # - backend-unit-test
 
 frontend-build-test:
+  image: node:10
   stage: frontend-build-test
   script:
-    - cd builds/Seasonfarm/ClientApp/
+    - cd Seasonfarm/ClientApp/
     - npm install
     - npm run test
     - npm run build
