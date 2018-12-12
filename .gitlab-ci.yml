@@ -9,7 +9,7 @@ frontend-build-test:
   script:
     - cd Seasonfarm/ClientApp/
     - npm install
-    - npm run test
+    # - npm run test
     - npm run build
 
 backend-build-test:

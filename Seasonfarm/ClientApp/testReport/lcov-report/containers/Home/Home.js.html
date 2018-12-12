@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for containers/Home/Home.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">containers/Home</a> Home.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/16</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { Component } from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import { ImageCarousel } from 'components/ImageCarousel';</span>
+<span class="cstat-no" title="statement not covered" >import { CardList } from 'components/CardList';</span>
+<span class="cstat-no" title="statement not covered" >import { PostThread } from 'components/PostThread';</span>
+<span class="cstat-no" title="statement not covered" >import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';</span>
+<span class="cstat-no" title="statement not covered" >import { faLine, faWeixin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';</span>
+<span class="cstat-no" title="statement not covered" >import logo from 'img/core-img/logo.png';</span>
+<span class="cstat-no" title="statement not covered" >import header from 'img/bg-img/header.jpg';</span>
+<span class="cstat-no" title="statement not covered" >import 'css/animate.css';</span>
+<span class="cstat-no" title="statement not covered" >import 'css/classy-nav.css';</span>
+<span class="cstat-no" title="statement not covered" >import 'css/magnific-popup.css';</span>
+<span class="cstat-no" title="statement not covered" >import 'css/nice-select.css';</span>
+<span class="cstat-no" title="statement not covered" >import 'css/bootstrap.min.css';</span>
+<span class="cstat-no" title="statement not covered" >import './style.css';</span>
+<span class="cstat-no" title="statement not covered" >import { GridList } from '../../components/GridList/GridList';</span>
+&nbsp;
+export class Home extends Component {
+    state = {
+        posts: [
+            {
+                image: 'https://farm5.staticflickr.com/4528/38929327052_c56b6294de_k.jpg',
+                title: 'ProductA',
+                tag: 'best',
+                date: '2018-12-12',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt augue pellentesque. Suspendisse vestibulum sem in eros maximus, pretium commodo turpis convallis. Aenean scelerisque orci quis urna tempus, vitae interdum velit aliquet.'
+            },
+            {
+                image: 'https://farm5.staticflickr.com/4918/31264873127_faab538e38_k.jpg',
+                title: 'ProductB',
+                tag: 'fresh',
+                date: '2018-12-12',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt augue pellentesque. Suspendisse vestibulum sem in eros maximus, pretium commodo turpis convallis. Aenean scelerisque orci quis urna tempus, vitae interdum velit aliquet.'
+            },
+        ],
+        images: [
+            { image: 'https://farm5.staticflickr.com/4528/38929327052_c56b6294de_k.jpg' },
+            { image: 'https://farm5.staticflickr.com/4918/31264873127_faab538e38_k.jpg' },
+            { image: 'https://farm3.staticflickr.com/2887/34347703385_cef69a6785_k.jpg' },
+            { image: 'https://farm3.staticflickr.com/2860/33963757180_69bd9c1ab9_k.jpg' },
+            { image: 'https://farm3.staticflickr.com/2813/33963089750_6e45fb9b69_k.jpg' }
+        ]
+    }
+&nbsp;
+    render() {
+<span class="cstat-no" title="statement not covered" >        return (</span>
+            &lt;div&gt;
+                &lt;header className="header-area"&gt;
+                    &lt;div className="top-header-area bg-img bg-overlay" style={{ backgroundImage: `url(${header})` }}&gt;
+                        &lt;div className="container h-100"&gt;
+                            &lt;div className="row h-100 align-items-center justify-content-between"&gt;
+                                &lt;div className="col-12 col-sm-6"&gt;
+                                    &lt;div className="top-social-info"&gt;
+                                        &lt;a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"&gt;&lt;FontAwesomeIcon icon={faFacebook} /&gt;&lt;/a&gt;
+                                        &lt;a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"&gt;&lt;FontAwesomeIcon icon={faTwitter} /&gt;&lt;/a&gt;
+                                        &lt;a href="#" data-toggle="tooltip" data-placement="bottom" title="Line"&gt;&lt;FontAwesomeIcon icon={faLine} /&gt;&lt;/a&gt;
+                                        &lt;a href="#" data-toggle="tooltip" data-placement="bottom" title="Weixin"&gt;&lt;FontAwesomeIcon icon={faWeixin} /&gt;&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div className="logo-area" &gt;
+                        &lt;a className="logo" href="index.html"&gt;&lt;img src={logo} alt="" /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div className="bueno-main-menu" id="sticker"&gt;
+                        &lt;div className="classy-nav-container breakpoint-off"&gt;
+                            &lt;div className="container"&gt;
+                                &lt;nav className="classy-navbar justify-content-between" id="buenoNav"&gt;
+                                    &lt;div className="classy-menu"&gt;
+                                        &lt;div className="classynav"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                                {/* &lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt; */}
+                                                {/* &lt;li&gt;&lt;a href="#"&gt;Recipes&lt;/a&gt;
+                                                &lt;div class="megamenu"&gt;
+                                                    &lt;ul class="single-mega cn-col-4"&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Recipe&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Bread&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Breakfast&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Meat&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Fastfood&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Salad&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Soup&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                    &lt;ul class="single-mega cn-col-4"&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Recipe&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Bread&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Breakfast&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Meat&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Fastfood&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Salad&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Soup&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                    &lt;ul class="single-mega cn-col-4"&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Recipe&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Bread&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Breakfast&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Meat&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Fastfood&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Salad&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Soup&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                    &lt;ul class="single-mega cn-col-4"&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Recipe&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Bread&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Breakfast&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Meat&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Fastfood&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Salad&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href="#"&gt;- Soup&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                            &lt;/li&gt; */}
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/header&gt;
+                &lt;div&gt;
+                    &lt;ImageCarousel
+                        images={this.state.posts}
+                    /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;CardList
+                        cards={this.state.posts}
+                    /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;PostThread
+                        posts={this.state.posts}
+                    /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;GridList
+                        images={this.state.images}
+                     /&gt;
+                &lt;/div&gt;
+                &lt;footer className="footer-area"&gt;
+                    &lt;div className="container"&gt;
+                        &lt;div className="row"&gt;
+                            &lt;div className="col-12 col-sm-5"&gt;
+                                &lt;p className="copywrite-text"&gt;&lt;a href="#" /&gt;
+                                    Copyright &amp;copy;&lt;script&gt;document.write(new Date().getFullYear());&lt;/script&gt; All rights reserved | This template is made with &lt;i className="fa fa-heart-o" aria-hidden="true"&gt;&lt;/i&gt; by &lt;a href="https://colorlib.com" target="_blank"&gt;Colorlib&lt;/a&gt;
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div className="col-12 col-sm-7"&gt;
+                                &lt;div className="footer-nav"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li className="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                        {/* &lt;li&gt;&lt;a href="#"&gt;Recipes&lt;/a&gt;&lt;/li&gt; */}
+                                        {/* &lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt; */}
+                                        {/* &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt; */}
+                                        {/* &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt; */}
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/footer&gt;
+            &lt;/div&gt;);
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 12 2018 17:41:09 GMT+0800 (台北標準時間)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

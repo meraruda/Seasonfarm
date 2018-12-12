@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ImageCarousel } from 'components/ImageCarousel';
 import { CardList } from 'components/CardList';
 import { PostThread } from 'components/PostThread';
+import { GridList } from 'components/GridList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLine, faWeixin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logo from 'img/core-img/logo.png';
@@ -12,7 +13,6 @@ import 'css/magnific-popup.css';
 import 'css/nice-select.css';
 import 'css/bootstrap.min.css';
 import './style.css';
-import { GridList } from '../../components/GridList/GridList';
 
 export class Home extends Component {
     state = {

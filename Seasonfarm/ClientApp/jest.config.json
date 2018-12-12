@@ -24,9 +24,15 @@
     ],
     "transform": {
       "^.+\\.js$": "babel-jest",
+      "^.+\\.jsx$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform",
       "\\.(jpg|jpeg|png|gif|webp|svg)$": "jest-transform-file"
     },
+    "transformIgnorePatterns": [
+      "owl.carousel/dist/assets/owl.carousel.css",
+      "owl.carousel/dist/assets/owl.theme.default.css",
+      "node_modules/(?!(ClientApp)/)"
+    ],
     "moduleFileExtensions": [
       "js",
       "jsx"
