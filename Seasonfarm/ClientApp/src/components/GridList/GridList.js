@@ -8,7 +8,7 @@ export class GridList extends PureComponent {
             <div className="instagram-feed-area d-flex flex-wrap">
             {
                 this.props.images.map((i) => (
-                    <div className="single-instagram">
+                    <div key={Math.random().toString(16)} className="single-instagram">
                         <img src={i.image} />
                         <a href={i.image} className="img-zoom" title="Instagram Image">+</a>
                     </div>
