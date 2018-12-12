@@ -8,15 +8,17 @@ import {
 import { Home } from './containers/Home';
 
 const Main = () => (
-    <Provider
-    >
-      <HashRouter>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/home" component={Home} />
-        </Switch>
-      </HashRouter>
-    </Provider>
+      <div>
+        <Provider
+        >
+          <HashRouter>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/home" component={Home} />
+            </Switch>
+          </HashRouter>
+        </Provider>
+      </div>
   );
   
   ReactDOM.render(<Main />, document.getElementById('app'));
