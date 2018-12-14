@@ -24,6 +24,7 @@ export class PostThread extends PureComponent {
                                     <Image post={p} />
                                 </div>
                                 }
+                                <hr />
                             </div>
                         ))
                     }

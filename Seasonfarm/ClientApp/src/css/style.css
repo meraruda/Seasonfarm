@@ -134,6 +134,10 @@ img {
   padding-top: 100px;
   padding-bottom: 70px; }
 
+.section-padding-50 {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
 /* :: 3.4.0 Preloader */
 .preloader {
   background-color: #3b5fcc;
