@@ -2,21 +2,19 @@ import React, { PureComponent } from 'react';
 import { PropTypes } from 'prop-types';
 import './GridList.less';
 
-export class GridList extends PureComponent {
-    render() {
-        return (
-            <div className="instagram-feed-area d-flex flex-wrap">
+export const GridList = (props) => {
+    return (
+        <div className="instagram-feed-area d-flex flex-wrap">
             {
-                this.props.images.map((i) => (
+                props.images.map((i) => (
                     <div key={Math.random().toString(16)} className="single-instagram">
                         <img src={i.image} />
                         <a href={i.image} className="img-zoom">+</a>
                     </div>
                 ))
             }
-            </div>
-        );
-    }       
+        </div>
+    );
 }
 
 GridList.defaultProps = {
@@ -25,6 +23,6 @@ GridList.defaultProps = {
 
 GridList.propTypes = {
     images: PropTypes.arrayOf(PropTypes.shape({
-        image: PropTypes.string        
+        image: PropTypes.string
     }))
 }
